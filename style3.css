@@ -1,0 +1,65 @@
+body {
+  min-height: 3000px;
+}
+/* .bgImage {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('img/logo/maze.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bgImage::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+} */
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #f4ff7a;
+
+}
+#about {
+  background-color: #f3f4f5;
+}
+
+#blog {
+  background-color: #f4ff7a;
+}
+#menu {
+  background-color: #59fee2;
+}
+
+.display-4 {
+  font-family: "Concert One", cursive;
+}
+.lead {
+  font-family: "Rubik Spray Paint", cursive;
+}
+.footer {
+  background-color: #c4ff3b;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+.blog {
+  padding: 1rem;
+}
+.blog-bawah {
+  padding : 3rem;
+}
+.blog-atas {
+  padding: 3rem;
+}
+/*
+ p {
+  color:  ;
+} 
+*/
