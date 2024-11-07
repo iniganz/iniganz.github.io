@@ -1,0 +1,187 @@
+
+* {
+    box-sizing: border-box;
+}
+body {
+
+    padding: 0%;
+    margin: 0.1%;
+}
+.gradient {
+    background: linear-gradient(
+        45deg, #ffcc00, #ff0c5a
+    );
+    background-size: 400%;
+    animation: gradient 6s infinite;
+    
+}
+@keyframes gradient {
+    0%, 100% {
+        background-position: 0%, 50%;
+    }
+    
+    50% {
+        background-position: 100% 50%;
+    }
+}
+#header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-size :cover;
+    background-position: center;
+    background-image: url('img/haed.jpg') ;
+    color: rgb(247, 255, 5);
+    text-align: center; 
+    padding: 75px;
+
+}
+/* sidebar */
+aside {
+    background-color: wheat;
+    text-align: center;
+    width: 10%;
+    float: left;
+}
+aside p {
+  text-align: center;
+}
+.sidebar{
+    position: sticky;
+}
+.sidebar h2{
+  color: black; 
+}
+.sidebar a {
+    text-decoration: none;
+    color : darkred;
+}
+.sidebar a:hover {
+    font-weight: bold;
+}
+.text-bold {
+font-weight: bold;
+color: white;
+background-color: darkred;
+}
+.imgf {
+    border-radius: 50%;
+}
+.img {
+  float: left;
+  padding: 2px;
+}
+
+.menu { 
+
+    text-align: right;
+    padding: 5px;
+    position: sticky;
+    box-shadow: 0 5px 0 0 rgba(1, 1, 1, 0.2);
+    background-color:darkred;
+    
+}
+.menu a {
+    color: wheat;
+    text-decoration: none;
+    margin-right: 5px;
+} 
+.menu a:hover{
+    font-weight: bold;
+}
+
+/* 2 bar-content */
+
+/* side-content */
+.card{
+   
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 1px 4px rgb(242, 219, 182);
+}
+/* right-content */
+.content {
+    background-color: wheat;
+    float: right;
+    width: 89%;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.r2 h2 {
+    text-align: center;
+    color: darkred;
+   font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+.content h3 { 
+    color : darkred;
+}
+.content p {
+    font-size: medium ;
+    color: rgb(123, 68, 0);
+
+}
+.content a {
+    text-decoration: none;
+    color: darkred;
+}
+.content a:hover{
+    font-weight: bold;
+}
+/* nametag */
+.footer {
+    padding: 20px; 
+    text-align: center;  
+    color: darkblue;
+    font-weight: bold;
+}
+main { 
+    overflow: auto;
+    padding: 15px;
+}
+/* img 1 */
+.b1 {
+    display :flex;
+    gap: 2%;
+   overflow: scroll;
+}
+
+/* img 2 */
+.b2 {
+    display: flex;
+    gap: 2%;
+    overflow:scroll;
+}
+
+/* img 3 */
+.b3 {
+display: flex;
+gap: 2%;
+overflow: scroll;
+}
+
+/* img 4 */
+.b4 {
+    display: flex;
+    gap:2%;
+    overflow: scroll;
+}
+
+
+/* img 5 */
+.b5 {
+    display : flex;
+    gap: 2%;
+    overflow: scroll;
+}
+
+
+p { 
+    text-align : justify;
+}
+
+
+
+@media screen and (max-width: 922px) {
+
+	.content, aside{
+		width: 100%;
+    }
+}
+

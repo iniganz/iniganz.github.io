@@ -1,0 +1,31 @@
+.slider h3,
+.slider h5,
+.clients h3 {
+  text-shadow: 1px 1px 3px rgb(0, 0, 0, 0.7);
+}
+
+.parallax-container {
+    height: 20%;
+}
+
+.parallax img{
+    filter: grayscale(1);
+    opacity: 0.5 !important;
+}
+
+.clients img {
+    max-width: 150px;
+    filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.8));
+}
+
+.sidenav .side-img {
+    margin-left: 90%;
+    
+}
+.sidenav .side-a{
+    margin-bottom:55%;
+}
+
+section {
+    padding : 20px 0;
+}
