@@ -1,14 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M`Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
-<body>
-    ini blog
+<body class="bg-gray-100">
 
-    <script src="main.js"></script>
-</body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar bg-purple-700 p-4 fixed top-0 left-0 w-full z-10 shadow-md nav-container">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo (Opsional) -->
+            <div class="text-white font-bold text-xl">
+                <a href="#home">
+                    <img src="aset/foto/1.jpg" alt="" class="nav-img w-12 h-12 rounded-full"> <!-- Menambahkan ukuran dan rounded untuk logo -->
+                </a>
+            </div>
+
+            <!-- Tulisan GG di tengah -->
+            <div class="text-nav text-white font-bold text-xl mx-auto ">
+                <p>
+                    HyperNest
+                </p>
+            </div>
+
+            <!-- Menu -->
+            <div class="space-x-4">
+                <a href="#" class="text-white hover:text-blue-300 transition a-navbar">Home</a>
+                <a href="#" class="text-white hover:text-blue-300 transition a-navbar">Blog</a>
+                <a href="#" class="text-white hover:text-blue-300 transition a-navbar">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- container content dan sidebar -->
+     <div class="conbar-container p-4">
+
+         <!-- Content -->
+         <div class="content-container "> <!-- Menambahkan margin top untuk memberi ruang di bawah navbar -->
+             <p>ini content</p>
+            </div>
+            <!-- sidebar -->
+            <div class="sidebar-container ">
+                <p>ini sidebar</p>
+            </div>
+        </div>
+            <!-- footer -->
+            <div class="footer-container mt-20 p-4">
+                <p>ini footer</p>
+            </div>
+            
+    <script src="main.js">
+     let prevScrollPos = window.pageYOffset; // Track previous scroll position
+const navbar = document.getElementById("navbar");
+
+window.onscroll = function() {
+    let currentScrollPos = window.pageYOffset;
+
+    // If user scrolls down, hide navbar
+    if (prevScrollPos < currentScrollPos) {
+        navbar.classList.add("navbar-hidden");
+    } else {
+        // If user scrolls up, show navbar
+        navbar.classList.remove("navbar-hidden");
+    }
+
+    prevScrollPos = currentScrollPos; // Update previous scroll position
+};
+    </script>
+        </body>
 </html>

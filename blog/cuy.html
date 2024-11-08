@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M`Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Navbar Default Style */
+        #navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #6B46C1; /* Purple color */
+            padding: 10px 20px;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: top 0.3s ease-in-out; /* Smooth transition for sliding navbar */
+        }
+
+        /* Navbar Menu */
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .text-nav {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #4FD1C5; /* Light teal color */
+        }
+
+        /* Padding for Content */
+        .content-container {
+            margin-top: 70px; /* Provide space for fixed navbar */
+        }
+
+        /* Sidebar Container */
+        .sidebar-container {
+            width: 200px;
+            padding: 20px;
+            background-color: #f7fafc;
+            border-radius: 8px;
+        }
+
+        /* Footer Style */
+        .footer-container {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #1A202C;
+            color: white;
+            text-align: center;
+        }
+
+        /* Effect to Hide Navbar When Scrolling Down */
+        .navbar-hidden {
+            top: -80px; /* Push the navbar out of the screen when scrolling down */
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo (Optional) -->
+            <div class="text-white font-bold text-xl">
+                <a href="#home">
+                    <img src="aset/foto/1.jpg" alt="Logo" class="w-12 h-12 rounded-full">
+                </a>
+            </div>
+
+            <!-- Text in the center -->
+            <div class="text-nav mx-auto">
+                HyperNest
+            </div>
+
+            <!-- Menu -->
+            <div class="space-x-4">
+                <a href="#" class="text-white hover:text-blue-300 transition">Home</a>
+                <a href="#" class="text-white hover:text-blue-300 transition">Blog</a>
+                <a href="#" class="text-white hover:text-blue-300 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content and Sidebar -->
+    <div class="conbar-container mt-10 p-4 flex">
+        <div class="content-container w-full">
+            <p>ini content</p>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar-container ml-8">
+            <p>ini sidebar</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-container">
+        <p>ini footer</p>
+    </div>
+
+    <!-- JavaScript for Scroll Detection -->
+    <script>
+        let prevScrollPos = window.pageYOffset; // Track previous scroll position
+        const navbar = document.getElementById("navbar");
+
+        window.onscroll = function() {
+            let currentScrollPos = window.pageYOffset;
+
+            // If user scrolls down, hide navbar
+            if (prevScrollPos < currentScrollPos) {
+                navbar.classList.add("navbar-hidden");
+            } else {
+                // If user scrolls up, show navbar
+                navbar.classList.remove("navbar-hidden");
+            }
+
+            prevScrollPos = currentScrollPos; // Update previous scroll position
+        };
+    </script>
+
+</body>
+</html>
+
+
+
+
+<!-- scroll ke atas -->
+<!-- <div class="scroll-up bottom-0">
+
+    <a href="#navbar" class="arrow-up">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+</div> -->

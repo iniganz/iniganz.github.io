@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+/* font */
+@font-face {
+    font-family: "Pokemon";
+    src: url(aset/font/Pokemon.ttf);
+}
+
+/* navbar */
+
+.nav-container {
+    /* margin-bottom: 20px; */
+    /* box-shadow: 1px 1px 3px #000000; */
+    /* border-bottom: 3px solid #000 ; */
+    animation: shadowMove 3s infinite; 
+    transition: top 0.3s ease-in-out;
+}
+.navbar-hidden {
+    top: -100px; /* Push the navbar out of the screen when scrolling down */
+}
+.nav-img {
+    width: 70px;
+    height: 100%;
+    /*box-shadow: 3px 2px 3px 1px #000;*/
+    animation: boxshadowRotate 3s infinite;
+    border: 1.5px solid #000;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+}
+.text-nav p{
+    font-size: xx-large;
+    font-family: "Pokemon";
+    /* text-shadow:  -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;  */
+    animation: shadowRotate 3s infinite;
+    color: #fff;
+
+} 
+.a-navbar {
+    font-size: larger;
+    font-family: "Pokemon";
+    /*text-shadow: -2px -2px 0 #000,      2px -2px 0 #000,    -2px 2px 0 #000,    2px 2px 0 #000;
+    */animation: shadowRotate 6s infinite;
+    color: #fff;
+    -webkit-animation: shadowRotate 6s infinite;
+}
+
+/* end navbar */
+/* scroll up */
+.scroll-up {
+    position: fixed;
+    display: flex;
+    width: 100%; 
+    justify-content: right;
+    border: 1px solid #000;
+}
+.arrow-up {
+    bottom: 0;
+    width: 100%;
+    border: 1px solid #000;
+    align-items: right;
+    /* right: 0; */
+}
+/* end scroll up */
+
+/* pembungkus content dan sidebar */
+.conbar-container {
+    display: flex;
+    margin-top: 7em;
+}
+/* content */
+.content-container {
+    /* display: flex; */
+    border: 2px solid #000;
+    height: 100vh;
+    /* padding-top: 10px; */
+    width: 80%;
+}
+/* end content */
+
+/* sidebar */
+.sidebar-container {
+    /* display: flex; */
+    border: 2px solid #000;
+    height: 100vh;
+    width: 20%;
+}
+/* end sidebar */
+
+/* footer */
+.footer-container{
+    border: 1px solid #000;
+}
+/* end footer */
+
+/* end pembungkus */
+
+/* animasi */
+
+/* 1. text navbar */
+@keyframes shadowRotate {
+    0% {
+        text-shadow: 
+            2px 2px 5px rgb(0, 0, 0), 
+            -2px -2px 5px rgb(43, 43, 43), 
+            2px -2px 5px rgb(74, 73, 73), 
+            -2px 2px 5px rgb(96, 96, 95);
+    }
+    25% {
+        text-shadow: 
+            2px 2px 5px rgb(96, 96, 95), 
+            -2px -2px 5px rgb(0, 0, 0), 
+            2px -2px 5px rgb(43, 43, 43), 
+            -2px 2px 5px rgb(74, 73, 73);
+    }
+    50% {
+        text-shadow: 
+            2px 2px 5px rgb(74, 73, 73), 
+            -2px -2px 5px rgb(96, 96, 95), 
+            2px -2px 5px rgb(0, 0, 0), 
+            -2px 2px 5px rgb(43, 43, 43);
+    }
+    75% {
+        text-shadow: 
+            2px 2px 5px rgb(43, 43, 43), 
+            -2px -2px 5px rgb(74, 73, 73), 
+            2px -2px 5px rgb(96, 96, 95), 
+            -2px 2px 5px rgb(0, 0, 0);
+    }
+    100% {
+        text-shadow: 
+            2px 2px 5px rgb(0, 0, 0), 
+            -2px -2px 5px rgb(43, 43, 43), 
+            2px -2px 5px rgb(74, 73, 73), 
+            -2px 2px 5px rgb(96, 96, 95);
+    }
+}
+/* 2. box rotate */
+@keyframes boxshadowRotate {
+    0% {
+        box-shadow: 
+            2px 2px 5px rgb(0, 0, 0), 
+            -2px -2px 5px rgb(43, 43, 43), 
+            2px -2px 5px rgb(74, 73, 73), 
+            -2px 2px 5px rgb(96, 96, 95);
+    }
+    25% {
+        box-shadow: 
+            2px 2px 5px rgb(96, 96, 95), 
+            -2px -2px 5px rgb(0, 0, 0), 
+            2px -2px 5px rgb(43, 43, 43), 
+            -2px 2px 5px rgb(74, 73, 73);
+    }
+    50% {
+        box-shadow: 
+            2px 2px 5px rgb(74, 73, 73), 
+            -2px -2px 5px rgb(96, 96, 95), 
+            2px -2px 5px rgb(0, 0, 0), 
+            -2px 2px 5px rgb(43, 43, 43);
+    }
+    75% {
+        box-shadow: 
+            2px 2px 5px rgb(43, 43, 43), 
+            -2px -2px 5px rgb(74, 73, 73), 
+            2px -2px 5px rgb(96, 96, 95), 
+            -2px 2px 5px rgb(0, 0, 0);
+    }
+    100% {
+        box-shadow: 
+            2px 2px 5px rgb(0, 0, 0), 
+            -2px -2px 5px rgb(43, 43, 43), 
+            2px -2px 5px rgb(74, 73, 73), 
+            -2px 2px 5px rgb(96, 96, 95);
+    }
+}
+/* 3. Shadow run */
+@keyframes shadowMove {
+    0% {
+        box-shadow: -5px 0px 10px gray; /* Shadow awal di kiri dengan warna abu-abu */
+    }
+    50% {
+        box-shadow: 5px 0px 10px black; /* Shadow di tengah dengan warna hitam */
+    }
+    100% {
+        box-shadow: -5px 0px 10px gray; /* Shadow kembali ke kiri dengan warna abu-abu */
+    }
+}
+/* 4. Border run */
+@keyframes borderColorMove {
+    0% {
+        border-bottom: 3px solid gray; /* Border abu-abu di awal */
+    }
+    50% {
+        border-bottom: 3px solid black; /* Border hitam di tengah */
+    }
+    100% {
+        border-bottom: 3px solid gray; /* Border kembali abu-abu di akhir */
+    }
+}
+/* Menerapkan animasi border-bottom */
+.nav-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: gray;
+    animation: borderColorMove 7s infinite;
+    -webkit-animation: borderColorMove 7s infinite;
+}
+/* end animasi */
+
+/* Scroll bar */
+/* Mengatur scrollbar */
+       /* Mengatur scrollbar */
+    ::-webkit-scrollbar {
+        width: 12px; /* Ukuran scrollbar */
+        height: 12px; /* Untuk scrollbar horizontal */
+    }
+
+    /* Track scrollbar (latar belakang scrollbar) */
+    ::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+        border-radius: 10px;
+        transition: background-color 0.5s ease; /* Transisi warna track */
+    }
+
+    /* Thumb (batang scrollbar yang digulir) */
+    ::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 10px;
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Animasi transisi untuk thumb */
+    }
+
+    /* Efek hover pada thumb scrollbar */
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #555;
+        transform: scale(1.2); /* Thumb membesar saat hover */
+    }
+
+    /* Efek animasi pada thumb untuk perubahan warna */
+    @keyframes thumbColorChange {
+        0% {
+            background-color: #888;
+        }
+        50% {
+            background-color: #4CAF50;
+        }
+        100% {
+            background-color: #888;
+        }
+    }
+
+    /* Mengaplikasikan animasi pada thumb */
+    ::-webkit-scrollbar-thumb {
+        animation: thumbColorChange 3s infinite ease-in-out; /* Animasi warna thumb */
+    }
+
+    /* end scrollbar */
