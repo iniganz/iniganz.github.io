@@ -21,7 +21,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #6B46C1; /* Warna ungu */
+    height: 85px;
+    background-color: #77207a; /* Warna ungu */
     padding: 10px 20px;
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -29,11 +30,16 @@
     /* position: fixed;
     transition: top 0.3s ease-in-out; */
 }
+.container {
+    display: flex;
+    margin: auto;
+    
+}
 .navbar-hidden {
     top: -100px; /* Push the navbar out of the screen when scrolling down */
 }
 .nav-img {
-    width: 70px;
+    width: 63px;
     height: 100%;
     /*box-shadow: 3px 2px 3px 1px #000;*/
     animation: boxshadowRotate 3s infinite;
@@ -48,20 +54,19 @@
 .text-nav p{
     font-size: xx-large;
     font-family: "Pokemon";
-    /* text-shadow:  -2px -2px 0 #000,  
-    2px -2px 0 #000,
-    -2px 2px 0 #000,
-    2px 2px 0 #000;  */
-    animation: shadowRotate 3s infinite;
-    color: #fff;
+    /*text-shadow:  -2px -2px 0 #000,      2px -2px 0 #000,    -2px 2px 0 #000,    2px 2px 0 #000;
+    */animation: shadowRotate 3s infinite;
 
+    font-weight: 600;
+    color: #fff;
+    -webkit-animation: shadowRotate 3s infinite;
 } 
 .a-navbar {
     font-size: larger;
     font-family: "Pokemon";
     /*text-shadow: -2px -2px 0 #000,      2px -2px 0 #000,    -2px 2px 0 #000,    2px 2px 0 #000;
     */animation: shadowRotate 6s infinite;
-    color: #fff;
+    /* color: #fff; */
     -webkit-animation: shadowRotate 6s infinite;
 }
 
