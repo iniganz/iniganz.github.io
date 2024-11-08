@@ -6,6 +6,7 @@ body {
 
     padding: 0%;
     margin: 0.1%;
+    
 }
 .gradient {
     background: linear-gradient(
@@ -34,6 +35,18 @@ body {
     padding: 75px;
 
 }
+
+/* navbar */
+.nav-container {
+    display: block;
+}
+.music-container {
+    display: block;
+    position: absolute;
+}
+/* end nav */
+
+
 /* sidebar */
 aside {
     background-color: wheat;
@@ -62,6 +75,19 @@ font-weight: bold;
 color: white;
 background-color: darkred;
 }
+.pp-container {
+    background: transparent;
+    border: none;
+}
+.pp-button {
+    border: none;
+    background: transparent;
+}
+.pp-i {
+    background: transparent;
+    color: inherit;
+}
+
 .imgf {
     border-radius: 50%;
 }
@@ -139,7 +165,9 @@ main {
 .b1 {
     display :flex;
     gap: 2%;
-   overflow: scroll;
+    overflow: scroll;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 /* img 2 */
@@ -147,13 +175,17 @@ main {
     display: flex;
     gap: 2%;
     overflow:scroll;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 /* img 3 */
 .b3 {
-display: flex;
-gap: 2%;
-overflow: scroll;
+    display: flex;
+    gap: 2%;
+    overflow: scroll;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 /* img 4 */
@@ -161,6 +193,8 @@ overflow: scroll;
     display: flex;
     gap:2%;
     overflow: scroll;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 
@@ -169,6 +203,8 @@ overflow: scroll;
     display : flex;
     gap: 2%;
     overflow: scroll;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 

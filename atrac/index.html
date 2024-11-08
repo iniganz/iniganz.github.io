@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=divice-width, initial-scale=1.0">
     <title>Balinese Tourist Attraction</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+     <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     
@@ -20,8 +22,8 @@
         <div class="gradient">
             <div class="menu">
                 
-               <a href="https://discord.com/channels/889699756597731358/889699756597731361" >Home</a> 
-               <a href="https://superapp.id/blog/lifestyle/wibu-adalah/" >About</a> 
+               <a href="../iniganz.html" >Home</a> 
+               <a href="../blog/index.html" >About</a> 
                <a href="https://chat.whatsapp.com/CPecgrsjzAC2XIInGatDSM">Contact</a>
             </div>
             
@@ -39,9 +41,13 @@
                         <audio id="audioNotifikasi">
                             <source src="audio/muc.mp3" type="audio/mpeg">
                        </audio>  
-                    
-                       <button onclick="playAudio()" type="button">Play Audio</button>
-                       <button onclick="pauseAudio()" type="button">Pause Audio</button>
+                       <div class="music-container">
+                           <p>Music</p>
+                           <div class="pp-container">
+                               <button onclick="playAudio()" class="pp-button" type="button"><i class="pp-i fa-regular fa-circle-play"></i></button>
+                               <button onclick="pauseAudio()" class="pp-button" type="button"><i class="pp-i fa-regular fa-circle-pause"></i></button>
+                           </div>
+                       </div>
                     
                        <script type="text/javascript">
                         var el = document.getElementById("audioNotifikasi");
@@ -56,7 +62,7 @@
                        </script>
                         <h2>Popular</h2> 
                         <ul>     
-                        <li><a href="https://anoboy.lol/">Balinese in Wibu</a> <br></li>
+                        <li><a href="https://otakudesu/">Balinese in Wibu</a> <br></li>
                         <li><a href="https://anoboy.lol/2018/01/darling-in-the-franxx/">Balinese Darling in the franxx</a><br></li>
                         <li><a href="https://anoboy.lol/2017/10/black-clover/">Balinese Black clover</a><br></li>
                         </ul>

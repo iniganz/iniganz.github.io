@@ -1,3 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+
+
+}
+/* Mengatur scrollbar */
+       /* Mengatur scrollbar */
+       ::-webkit-scrollbar {
+        width: 12px; /* Ukuran scrollbar */
+        height: 12px; /* Untuk scrollbar horizontal */
+    }
+
+    /* Track scrollbar (latar belakang scrollbar) */
+    ::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+        border-radius: 10px;
+        transition: background-color 0.5s ease; /* Transisi warna track */
+    }
+
+    /* Thumb (batang scrollbar yang digulir) */
+    ::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 10px;
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Animasi transisi untuk thumb */
+    }
+
+    /* Efek hover pada thumb scrollbar */
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #555;
+        transform: scale(1.2); /* Thumb membesar saat hover */
+    }
+
+    /* Efek animasi pada thumb untuk perubahan warna */
+    @keyframes thumbColorChange {
+        0% {
+            background-color: #888;
+        }
+        50% {
+            background-color: #4CAF50;
+        }
+        100% {
+            background-color: #888;
+        }
+    }
+
+    /* Mengaplikasikan animasi pada thumb */
+    ::-webkit-scrollbar-thumb {
+        animation: thumbColorChange 3s infinite ease-in-out; /* Animasi warna thumb */
+    }
+
+
+
+
+
+
 .slider h3,
 .slider h5,
 .clients h3 {
@@ -7,6 +65,7 @@
 .parallax-container {
     height: 20%;
 }
+
 
 .parallax img{
     filter: grayscale(1);
