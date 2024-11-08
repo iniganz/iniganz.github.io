@@ -16,8 +16,18 @@
     /* margin-bottom: 20px; */
     /* box-shadow: 1px 1px 3px #000000; */
     /* border-bottom: 3px solid #000 ; */
-    animation: shadowMove 3s infinite; 
+    /* animation: shadowMove 3s infinite;  */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #6B46C1; /* Warna ungu */
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: top 0.3s ease-in-out;
+    /* position: fixed;
+    transition: top 0.3s ease-in-out; */
 }
 .navbar-hidden {
     top: -100px; /* Push the navbar out of the screen when scrolling down */
@@ -76,7 +86,7 @@
 /* pembungkus content dan sidebar */
 .conbar-container {
     display: flex;
-    margin-top: 7em;
+    margin-top: 5em;
 }
 /* content */
 .content-container {
